@@ -14,6 +14,7 @@ radius = 0.7597656
 script = ExtResource("1_14x6p")
 
 [node name="junk01" parent="." unique_id=1078730069 instance=ExtResource("2_st0j4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1046025806]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025019228, 0.59285235, -0.47301844)
