@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dcjwmvec5ld5" path="res://3D Models/pick_up.gd" id="1_14x6p"]
 [ext_resource type="PackedScene" uid="uid://cgvauhcjmniv" path="res://3D Models/junk01.glb" id="2_st0j4"]
+[ext_resource type="Script" uid="uid://b517aesgtjtrm" path="res://3D Models/deleter.gd" id="3_st0j4"]
+[ext_resource type="Script" uid="uid://86npankyo2oe" path="res://3D Models/pick_up_processing.gd" id="4_qgvsb"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_32oma"]
 height = 1.250061
@@ -16,4 +18,12 @@ script = ExtResource("1_14x6p")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025019228, 0.59285235, -0.47301844)
 shape = SubResource("CylinderShape3D_32oma")
 
+[node name="Deleter" type="Node" parent="." unique_id=1123150410]
+script = ExtResource("3_st0j4")
+
+[node name="PickUpProcessing" type="Node" parent="." unique_id=1097331328]
+script = ExtResource("4_qgvsb")
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="picked_up" from="." to="PickUpProcessing" method="_on_pick_up_picked_up"]
+[connection signal="delete_ready" from="PickUpProcessing" to="Deleter" method="_on_pick_up_processing_delete_ready"]
