@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dj2u6o40xsp8x"]
+
+[ext_resource type="Script" uid="uid://3ux560yuomtb" path="res://3D Models/incremental.gd" id="1_gelay"]
+
+[node name="Incremental" type="Node" unique_id=1950371532 node_paths=PackedStringArray("timer")]
+script = ExtResource("1_gelay")
+timer = NodePath("Timer")
+
+[node name="Timer" type="Timer" parent="." unique_id=1516240663]
+wait_time = 5.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
