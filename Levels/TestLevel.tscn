@@ -16,9 +16,12 @@
 [ext_resource type="PackedScene" uid="uid://43ami4e34o0l" path="res://3D Models/green_cup.tscn" id="19_8lo6y"]
 [ext_resource type="Texture2D" uid="uid://yhboexpgtv5p" path="res://GDTVAssetPack/Environment/Grass_Vege_castle-colour-palette.png" id="19_g3lox"]
 [ext_resource type="PackedScene" uid="uid://by545d6tu0ty4" path="res://Levels/Portal.tscn" id="20_4pr13"]
+[ext_resource type="PackedScene" uid="uid://hrlfkryujpaw" path="res://3D Models/I-Beam.gltf" id="20_gp5y3"]
 [ext_resource type="PackedScene" uid="uid://bngabqv0l7eoo" path="res://Levels/OutOfBounds.tscn" id="20_mfgam"]
 [ext_resource type="PackedScene" uid="uid://dwopb2773wcg5" path="res://GDTVAssetPack/Environment/Grass_Vege.glb" id="20_s6a6t"]
 [ext_resource type="FontFile" uid="uid://ij353qf6fdpf" path="res://UserInterface/Font/Staatliches-Regular.ttf" id="20_w1exm"]
+[ext_resource type="PackedScene" uid="uid://cl0uc54qts74t" path="res://3D Models/pumpkin.glb" id="21_w8qko"]
+[ext_resource type="PackedScene" uid="uid://qat0v4kmm3g6" path="res://3D Models/flagstone.glb" id="22_tw0iv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fepxo"]
 diffuse_mode = 3
@@ -460,6 +463,15 @@ bus = &"SFX"
 
 [node name="GreenCup" parent="Pickups" unique_id=15708733 instance=ExtResource("19_8lo6y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5657523, -0.031187415, 9.964978)
+
+[node name="blockbench_export" parent="." unique_id=270715324 instance=ExtResource("20_gp5y3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6664357, 0, 11.045634)
+
+[node name="pumpkin" parent="." unique_id=565032480 instance=ExtResource("21_w8qko")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.620228, 2.3841858e-07, 13.230714)
+
+[node name="flagstone" parent="." unique_id=2138751965 instance=ExtResource("22_tw0iv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1622133, 0.19484122, 13.546834)
 
 [editable path="Environment/Grass/GrassMultiMeshInstance3D/Grass_Vege2"]
 [editable path="Environment/Grass/GrassMultiMeshInstance3D2/Grass_Vege2"]
