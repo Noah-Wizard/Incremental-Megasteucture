@@ -18,7 +18,7 @@ config/name="Oberon the Automaton and the Incremental Megastructure"
 config/version="1.0"
 run/main_scene="res://Levels/TestLevel.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="uid://dooxhn70panvd"
+config/icon="uid://c422fmhhh7oar"
 
 [audio]
 

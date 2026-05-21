@@ -21,7 +21,8 @@
 [ext_resource type="PackedScene" uid="uid://dwopb2773wcg5" path="res://GDTVAssetPack/Environment/Grass_Vege.glb" id="20_s6a6t"]
 [ext_resource type="FontFile" uid="uid://ij353qf6fdpf" path="res://UserInterface/Font/Staatliches-Regular.ttf" id="20_w1exm"]
 [ext_resource type="PackedScene" uid="uid://cl0uc54qts74t" path="res://3D Models/pumpkin.glb" id="21_w8qko"]
-[ext_resource type="PackedScene" uid="uid://qat0v4kmm3g6" path="res://3D Models/flagstone.glb" id="22_tw0iv"]
+[ext_resource type="PackedScene" uid="uid://b5vo62m0c8l7e" path="res://3D Models/flagstone.glb" id="22_tw0iv"]
+[ext_resource type="PackedScene" uid="uid://rwwqt5tvgrr0" path="res://3D Models/chain.gltf" id="23_jxq34"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fepxo"]
 diffuse_mode = 3
@@ -470,8 +471,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6664357, 0, 11.045634)
 [node name="pumpkin" parent="." unique_id=565032480 instance=ExtResource("21_w8qko")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.620228, 2.3841858e-07, 13.230714)
 
-[node name="flagstone" parent="." unique_id=2138751965 instance=ExtResource("22_tw0iv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1622133, 0.19484122, 13.546834)
+[node name="flagstone" parent="." unique_id=553716419 instance=ExtResource("22_tw0iv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1628404, 0.19484134, 13.693376)
+
+[node name="blockbench_export2" parent="." unique_id=1169095744 instance=ExtResource("23_jxq34")]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.6476355, 0.21874952, 9.719491)
 
 [editable path="Environment/Grass/GrassMultiMeshInstance3D/Grass_Vege2"]
 [editable path="Environment/Grass/GrassMultiMeshInstance3D2/Grass_Vege2"]
