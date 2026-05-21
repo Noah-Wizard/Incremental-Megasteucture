@@ -16,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Oberon the Automaton and the Incremental Megastructure"
 config/version="1.0"
-run/main_scene="res://Levels/TestLevel.tscn"
+run/main_scene="uid://c1dcyfblgw2p8"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://c422fmhhh7oar"
 

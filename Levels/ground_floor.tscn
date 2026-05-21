@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://c1dcyfblgw2p8"]
+
+[ext_resource type="Environment" uid="uid://dybgim7p06ncg" path="res://Levels/BrightWorld.tres" id="1_h67fv"]
+[ext_resource type="PackedScene" uid="uid://vwr8ajoufse8" path="res://Controller/Player.tscn" id="2_an732"]
+[ext_resource type="PackedScene" uid="uid://by545d6tu0ty4" path="res://Levels/Portal.tscn" id="16_8nj4d"]
+[ext_resource type="FontFile" uid="uid://ij353qf6fdpf" path="res://UserInterface/Font/Staatliches-Regular.ttf" id="17_gwhgg"]
+[ext_resource type="PackedScene" uid="uid://43ami4e34o0l" path="res://3D Models/green_cup.tscn" id="19_od4ix"]
+[ext_resource type="PackedScene" uid="uid://hrlfkryujpaw" path="res://3D Models/I-Beam.gltf" id="20_remrx"]
+[ext_resource type="PackedScene" uid="uid://cl0uc54qts74t" path="res://3D Models/pumpkin.glb" id="21_7nsw4"]
+[ext_resource type="PackedScene" uid="uid://b5vo62m0c8l7e" path="res://3D Models/flagstone.glb" id="22_mghn2"]
+[ext_resource type="PackedScene" uid="uid://rwwqt5tvgrr0" path="res://3D Models/chain.gltf" id="23_1oq3r"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fh8cy"]
+height = 15.878906
+radius = 25.666992
+
+[sub_resource type="Curve3D" id="Curve3D_fh8cy"]
+
+[node name="TestLevel" type="Node3D" unique_id=1847457263]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2124879743]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+directional_shadow_blend_splits = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=21085633]
+environment = ExtResource("1_h67fv")
+
+[node name="Player" parent="." unique_id=299780362 instance=ExtResource("2_an732")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -28.59639, 1, 7.3068447)
+
+[node name="Portal" parent="." unique_id=46978812 instance=ExtResource("16_8nj4d")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 18.207514, 1.4999981, 35.80174)
+next_level = "res://Levels/DebugLevel.tscn"
+
+[node name="PortalLabel" type="Label3D" parent="Portal" unique_id=1860900282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.65833, 1.61009)
+pixel_size = 0.008
+text = "Debug Room"
+font = ExtResource("17_gwhgg")
+font_size = 96
+outline_size = 24
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1483243813]
+volume_db = 5.0
+autoplay = true
+bus = &"SFX"
+
+[node name="Pickups" type="Node3D" parent="." unique_id=1424379692]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.6909523)
+
+[node name="GreenCup" parent="Pickups" unique_id=15708733 instance=ExtResource("19_od4ix")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.659061, -0.031185508, 12.154496)
+
+[node name="Graybox" type="CSGBox3D" parent="." unique_id=1153082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8696747, -17.906902, -0.27636623)
+use_collision = true
+size = Vector3(76.71945, 35.86914, 79.567566)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Graybox" unique_id=804520601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.57074, 0)
+operation = 2
+radius = 26.571777
+height = 27.339233
+sides = 16
+
+[node name="Environment NWiz" type="Node3D" parent="." unique_id=1097892514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.291472)
+
+[node name="I-Beam" parent="Environment NWiz" unique_id=270715324 instance=ExtResource("20_remrx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.84039, 0, 11.100032)
+
+[node name="Pumpkin" parent="Environment NWiz" unique_id=565032480 instance=ExtResource("21_7nsw4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.794182, 2.3841858e-07, 13.285111)
+
+[node name="Flagstone" parent="Environment NWiz" unique_id=553716419 instance=ExtResource("22_mghn2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.336794, 0.19484134, 13.747773)
+
+[node name="Chain" parent="Environment NWiz" unique_id=1169095744 instance=ExtResource("23_1oq3r")]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -29.82159, 0.21874952, 9.773889)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Environment NWiz" unique_id=1086900163]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment NWiz/StaticBody3D" unique_id=1191278235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8696747, -3.5793095, 8.015106)
+shape = SubResource("CylinderShape3D_fh8cy")
+
+[node name="Path3D" type="Path3D" parent="Environment NWiz" unique_id=699468159]
+curve = SubResource("Curve3D_fh8cy")
