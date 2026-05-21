@@ -1,4 +1,5 @@
 extends Node
+class_name Incremental
 @export var timer: Timer
 
 func _on_timer_timeout() -> void:

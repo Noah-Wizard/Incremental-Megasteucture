@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://bfend7vvxhiwr"]
+
+[ext_resource type="PackedScene" uid="uid://rwwqt5tvgrr0" path="res://3D Models/chain.gltf" id="1_vunrl"]
+[ext_resource type="Material" uid="uid://668hs77no82y" path="res://Materials/chain_mat.tres" id="2_b2ndx"]
+
+[node name="blockbench_export" unique_id=778537203 instance=ExtResource("1_vunrl")]
+
+[node name="vertical link" parent="." index="0" unique_id=1565919447]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link" parent="." index="1" unique_id=428146041]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link2" parent="." index="2" unique_id=913544752]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link2" parent="." index="3" unique_id=231619683]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link3" parent="." index="4" unique_id=1296947588]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link3" parent="." index="5" unique_id=1291817550]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link4" parent="." index="6" unique_id=2130393811]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link4" parent="." index="7" unique_id=1760380171]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link5" parent="." index="8" unique_id=1499699336]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link5" parent="." index="9" unique_id=2120074385]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link6" parent="." index="10" unique_id=1953898162]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link6" parent="." index="11" unique_id=117262768]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link7" parent="." index="12" unique_id=1764254273]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link7" parent="." index="13" unique_id=1529983121]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link8" parent="." index="14" unique_id=188808029]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link8" parent="." index="15" unique_id=1419392122]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link9" parent="." index="16" unique_id=772288464]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link9" parent="." index="17" unique_id=1057214666]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link10" parent="." index="18" unique_id=283232398]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link10" parent="." index="19" unique_id=419885367]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link11" parent="." index="20" unique_id=1999655814]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link11" parent="." index="21" unique_id=1564118287]
+material_override = ExtResource("2_b2ndx")
+
+[node name="vertical link12" parent="." index="22" unique_id=398569371]
+material_override = ExtResource("2_b2ndx")
+
+[node name="link12" parent="." index="23" unique_id=2011902086]
+material_override = ExtResource("2_b2ndx")

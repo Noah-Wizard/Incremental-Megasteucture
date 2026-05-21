@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bdofnuwap3ec5"]
+
+[ext_resource type="Script" uid="uid://dcjwmvec5ld5" path="res://3D Models/pick_up.gd" id="1_13mif"]
+[ext_resource type="PackedScene" uid="uid://bwvpwof7hncoe" path="res://3D Models/lava.glb" id="1_kke4q"]
+[ext_resource type="PackedScene" uid="uid://bpkvxluyhi75p" path="res://3D Models/lava bucket.glb" id="2_dj04a"]
+[ext_resource type="Script" uid="uid://86npankyo2oe" path="res://3D Models/pick_up_processing.gd" id="3_no5dn"]
+[ext_resource type="PackedScene" uid="uid://dj2u6o40xsp8x" path="res://Scenes/incremental.tscn" id="4_4qtfs"]
+[ext_resource type="Script" uid="uid://b517aesgtjtrm" path="res://3D Models/deleter.gd" id="4_infgy"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0sdus"]
+height = 1.476944
+radius = 0.9038086
+
+[node name="PickUp" type="Area3D" unique_id=15708733]
+script = ExtResource("1_13mif")
+
+[node name="Deleter" type="Node" parent="." unique_id=1123150410]
+script = ExtResource("4_infgy")
+
+[node name="PickUpProcessing" type="Node" parent="." unique_id=1097331328]
+script = ExtResource("3_no5dn")
+
+[node name="Incremental" parent="." unique_id=1950371532 instance=ExtResource("4_4qtfs")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=703291383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6127548, 0)
+shape = SubResource("CylinderShape3D_0sdus")
+
+[node name="lava bucket" parent="." unique_id=669951848 instance=ExtResource("2_dj04a")]
+
+[node name="lava" parent="." unique_id=519528165 instance=ExtResource("1_kke4q")]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="picked_up" from="." to="PickUpProcessing" method="_on_pick_up_picked_up"]
+[connection signal="picked_up" from="." to="Incremental" method="_on_pick_up_picked_up"]
+[connection signal="delete_ready" from="PickUpProcessing" to="Deleter" method="_on_pick_up_processing_delete_ready"]
+[connection signal="delete_ready" from="PickUpProcessing" to="Incremental" method="_on_pick_up_processing_delete_ready"]

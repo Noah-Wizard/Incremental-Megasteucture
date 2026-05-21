@@ -1,0 +1,488 @@
+[gd_scene format=3 uid="uid://dhluwkciea0xw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fh8cy"]
+albedo_color = Color(0.14, 0.105466664, 0.08400001, 1)
+
+[sub_resource type="Animation" id="Animation_xlnu7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Triangle:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, 1.5707964, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Triangle2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, 1.180087, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Triangle3:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, 0.7992212, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Triangle4:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, 0.4085118, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Triangle5:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, 0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Triangle6:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, -0.39070934, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Triangle7:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, -0.7715751, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Triangle8:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, -1.1622846, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Triangle9:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, -1.5707963, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Triangle10:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, -1.9615055, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Triangle11:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, -2.3423715, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Triangle12:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, -2.7330809, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Triangle13:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, -3.1415925, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Triangle14:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, 2.7508833, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Triangle15:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, 2.3700175, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Triangle16:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, 1.9793081, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_kct1s"]
+resource_name = "open_aperture"
+length = 3.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Triangle:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, 1.5707964, 0), Vector3(-1.5707964, 2.9670596, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Triangle2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3, 3.0333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, 1.180087, 0), Vector3(-1.5707964, 2.6843164, 0), Vector3(-1.5707964, 2.469641, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Triangle3:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, 0.7992212, 0), Vector3(-1.5707964, 2.0874138, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Triangle4:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, 0.4085118, 0), Vector3(-1.5707964, 1.8046705, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Triangle5:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, 0, 0), Vector3(-1.5707964, 1.3962634, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Triangle6:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, -0.39070934, 0), Vector3(-1.5707964, 1.1117747, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Triangle7:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, -0.7715751, 0), Vector3(-1.5707964, 0.62482786, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Triangle8:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, -1.1622846, 0), Vector3(-1.5707964, 0.23387411, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Triangle9:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, -1.5707963, 0), Vector3(-1.5707964, -0.17453292, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Triangle10:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, -1.9615055, 0), Vector3(-1.5707964, -0.6736971, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Triangle11:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, -2.3423715, 0), Vector3(-1.5707964, -1.0541788, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Triangle12:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, -2.7330809, 0), Vector3(-1.5707964, -1.4451326, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Triangle13:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, -3.1415925, 0), Vector3(-1.5707964, -1.7453293, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Triangle14:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, 2.7508833, 0), Vector3(-1.5707964, 4.038692, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Triangle15:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, 2.3700175, 0), Vector3(-1.5707964, 3.65821, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Triangle16:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, 1.9793081, 0), Vector3(-1.5707964, 3.2672563, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_soygv"]
+_data = {
+&"RESET": SubResource("Animation_xlnu7"),
+&"open_aperture": SubResource("Animation_kct1s")
+}
+
+[node name="Aperture" type="Node3D" unique_id=587458973]
+transform = Transform3D(2.017819, 0, 0, 0, 1, 0, 0, 0, 2.0021255, 0, 0, 0)
+
+[node name="Triangle" type="CSGPolygon3D" parent="." unique_id=1746349245]
+transform = Transform3D(-4.371139e-08, -1, -4.1501105e-09, 0, -4.371139e-08, 0.094943464, -1, 4.371139e-08, 1.814071e-16, 0.89174473, 0, 34.587563)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle2" type="CSGPolygon3D" parent="." unique_id=1057647758]
+transform = Transform3D(0.38084438, -0.9246391, -3.837355e-09, 0, -4.3711385e-08, 0.094943464, -0.9246391, -0.38084438, -1.5805465e-09, -9.167666, 0, 32.52577)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle3" type="CSGPolygon3D" parent="." unique_id=65975717]
+transform = Transform3D(0.6972651, -0.7168132, -2.9748544e-09, 0, -4.3711385e-08, 0.094943464, -0.7168132, -0.6972651, -2.8937275e-09, -18.08768, 0, 27.814537)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle4" type="CSGPolygon3D" parent="." unique_id=1536016418]
+transform = Transform3D(0.91771317, -0.39724404, -1.6486063e-09, 0, -4.3711392e-08, 0.09494346, -0.39724404, -0.91771317, -3.8086103e-09, -23.860783, 0, 19.32254)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle5" type="CSGPolygon3D" parent="." unique_id=890138957]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.3711385e-08, 0.094943464, 0, -0.99999994, -4.1501105e-09, -25.926258, 0, 9.072521)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle6" type="CSGPolygon3D" parent="." unique_id=1729096921]
+transform = Transform3D(0.9246393, 0.3808444, 1.5805461e-09, 0, -4.3711392e-08, 0.094943464, 0.3808444, -0.9246393, -3.837355e-09, -24.060034, 0, -1.0541849)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle7" type="CSGPolygon3D" parent="." unique_id=941224233]
+transform = Transform3D(0.71681327, 0.6972651, 2.8937273e-09, 0, -4.3711385e-08, 0.09494346, 0.6972651, -0.71681327, -2.9748544e-09, -18.754526, 0, -9.8023)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle8" type="CSGPolygon3D" parent="." unique_id=1891258101]
+transform = Transform3D(0.397244, 0.91771317, 3.8086103e-09, 0, -4.3711392e-08, 0.09494346, 0.91771317, -0.397244, -1.6486063e-09, -10.262529, 0, -15.575402)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle9" type="CSGPolygon3D" parent="." unique_id=358765403]
+transform = Transform3D(7.54979e-08, 1, 4.1501105e-09, 0, -4.371139e-08, 0.094943464, 1, -7.54979e-08, -3.1332463e-16, -0.42702866, 0, -17.619911)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle10" type="CSGPolygon3D" parent="." unique_id=452935342]
+transform = Transform3D(-0.38084432, 0.92463934, 3.837355e-09, 0, -4.3711392e-08, 0.094943464, 0.92463934, 0.38084432, 1.5805458e-09, 9.632381, 0, -15.558122)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle11" type="CSGPolygon3D" parent="." unique_id=1293551512]
+transform = Transform3D(-0.6972652, 0.71681327, 2.9748541e-09, 0, -4.371139e-08, 0.09494346, 0.71681327, 0.6972652, 2.8937273e-09, 18.552397, 0, -10.84689)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle12" type="CSGPolygon3D" parent="." unique_id=650421612]
+transform = Transform3D(-0.91771317, 0.39724407, 1.6486065e-09, 0, -4.3711392e-08, 0.09494346, 0.39724407, 0.91771317, 3.8086103e-09, 24.3255, 0, -2.3548937)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle13" type="CSGPolygon3D" parent="." unique_id=861874783]
+transform = Transform3D(-1, 1.509958e-07, 6.2664927e-16, 0, -4.371139e-08, 0.094943464, 1.509958e-07, 1, 4.1501105e-09, 25.992271, 0, 7.7905188)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle14" type="CSGPolygon3D" parent="." unique_id=495747521]
+transform = Transform3D(-0.92463917, -0.38084438, -1.5805462e-09, 0, -4.371139e-08, 0.094943464, -0.38084438, 0.92463917, 3.837355e-09, 25.099049, 0, 18.456917)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle15" type="CSGPolygon3D" parent="." unique_id=966563259]
+transform = Transform3D(-0.7168132, -0.6972651, -2.893727e-09, 0, -4.3711385e-08, 0.09494345, -0.6972651, 0.7168132, 2.974854e-09, 19.219246, 0, 26.769947)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="Triangle16" type="CSGPolygon3D" parent="." unique_id=1868426408]
+transform = Transform3D(-0.3972441, -0.91771317, -3.8086108e-09, 0, -4.3711392e-08, 0.09494347, -0.91771317, 0.3972441, 1.6486069e-09, 10.727249, 0, 32.54305)
+polygon = PackedVector2Array(0, 0, 1.9007416, 9.857922, 10.141521, 6.867125, 26.43051, 0.6110677)
+material = SubResource("StandardMaterial3D_fh8cy")
+
+[node name="ApertureAnimationPlayer" type="AnimationPlayer" parent="." unique_id=890380691]
+libraries/ = SubResource("AnimationLibrary_soygv")
+autoplay = &"open_aperture"

@@ -1,4 +1,5 @@
 extends Node
+class_name PickUpProcessing
 
 signal delete_ready
 
