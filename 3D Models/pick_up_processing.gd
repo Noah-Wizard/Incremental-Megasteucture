@@ -1,7 +1,8 @@
 extends Node
 class_name PickUpProcessing
+@onready var animation_player: AnimationPlayer = $"../AnimationPlayer"
 
-signal delete_ready
 
 func _on_pick_up_picked_up() -> void:
-	delete_ready.emit()
+	IncrementalsGlobalProcessing.currency1 +=1
+	animation_player.call_deferred("play", "get_lava")

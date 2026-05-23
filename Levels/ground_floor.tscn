@@ -6,12 +6,9 @@
 [ext_resource type="Material" uid="uid://cjlwcktdcfrx3" path="res://Materials/lava.tres" id="6_yl4ba"]
 [ext_resource type="Material" uid="uid://668hs77no82y" path="res://Materials/chain_mat.tres" id="7_yl4ba"]
 [ext_resource type="PackedScene" uid="uid://dhluwkciea0xw" path="res://3D Models/aperture.tscn" id="10_soygv"]
-[ext_resource type="PackedScene" uid="uid://ni7l0mwm4om5" path="res://3D Models/chain-holder.glb" id="10_xlnu7"]
 [ext_resource type="PackedScene" uid="uid://d3ub7yjvivvj4" path="res://3D Models/cage.glb" id="11_et7jy"]
 [ext_resource type="PackedScene" uid="uid://bdofnuwap3ec5" path="res://3D Models/lava_bucket.tscn" id="11_kct1s"]
-[ext_resource type="PackedScene" uid="uid://tchdtwvmkktb" path="res://3D Models/chain-holder-holder.glb" id="12_bgb4g"]
 [ext_resource type="PackedScene" uid="uid://dqix73f5083ic" path="res://3D Models/fence.glb" id="12_mdsp7"]
-[ext_resource type="PackedScene" uid="uid://bfend7vvxhiwr" path="res://3D Models/chain.tscn" id="15_bgsoj"]
 [ext_resource type="PackedScene" uid="uid://by545d6tu0ty4" path="res://Levels/Portal.tscn" id="16_8nj4d"]
 [ext_resource type="FontFile" uid="uid://ij353qf6fdpf" path="res://UserInterface/Font/Staatliches-Regular.ttf" id="17_gwhgg"]
 [ext_resource type="PackedScene" uid="uid://b2kf8udngpfy4" path="res://3D Models/i_beam.tscn" id="17_yl4ba"]
@@ -20,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://b5vo62m0c8l7e" path="res://3D Models/flagstone.glb" id="22_mghn2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bgb4g"]
-size = Vector3(2.961914, 1, 3.1934814)
+size = Vector3(9.090698, 1.0411377, 3.1934814)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bgsoj"]
 size = Vector3(1, 4.088867, 0.001)
@@ -60,7 +57,7 @@ bus = &"SFX"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.6909523)
 
 [node name="LAVA FIELD" type="CSGBox3D" parent="." unique_id=886667822]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.511581, -12.454134, 6.661256)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.511581, -11.335011, 6.661256)
 material_override = ExtResource("6_yl4ba")
 size = Vector3(77.14905, 4.78125, 73.09448)
 material = ExtResource("6_yl4ba")
@@ -147,121 +144,68 @@ shadow_enabled = true
 [node name="Flagstone" parent="Environment NWiz" unique_id=553716419 instance=ExtResource("22_mghn2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.336794, 0.19484134, 13.747773)
 
-[node name="Cage" parent="Environment NWiz" unique_id=101483208 instance=ExtResource("11_et7jy")]
+[node name="StaticBody3D" type="StaticBody3D" parent="Environment NWiz" unique_id=704091430]
 transform = Transform3D(-0.16721615, 0, 0.98592025, 0, 1, 0, -0.98592025, 0, -0.16721615, -23.529814, 0.15266812, 12.89179)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Environment NWiz/Cage" unique_id=704091430]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment NWiz/Cage/StaticBody3D" unique_id=617454305]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98095894, -0.67323923, -0.89985275)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment NWiz/StaticBody3D" unique_id=617454305]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.108460665, -0.6526704, -0.8998432)
 shape = SubResource("BoxShape3D_bgb4g")
 
-[node name="chain-holder-holder" parent="Environment NWiz/Cage" unique_id=2056488974 instance=ExtResource("12_bgb4g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4175119, 4.339144, 1.5988941)
+[node name="Cage" parent="Environment NWiz" unique_id=101483208 instance=ExtResource("11_et7jy")]
+transform = Transform3D(-0.16721615, 0, 0.98592025, 0, 1, 0, -0.98592025, 0, -0.16721615, -23.529814, 0.15266812, 12.89179)
 
 [node name="LavaBucket" parent="Environment NWiz/Cage" unique_id=18428301 instance=ExtResource("11_kct1s")]
 transform = Transform3D(-0.16721615, 0, -0.98592025, 0, 1, 0, 0.98592025, 0, -0.16721615, -0.87145185, 0.375, -0.61624527)
 
-[node name="chain-holder" parent="Environment NWiz/Cage" unique_id=660646503 instance=ExtResource("10_xlnu7")]
-transform = Transform3D(-0.16721615, 0, -0.98592025, 0, 1, 0, 0.98592025, 0, -0.16721615, 0.33235192, 4.3874493, -0.3970089)
-
-[node name="Chain" parent="Environment NWiz/Cage" unique_id=778537203 instance=ExtResource("15_bgsoj")]
-transform = Transform3D(7.30925e-09, -0.16721615, -0.98592025, -1, -4.371139e-08, 0, -4.3095945e-08, 0.98592025, -0.16721615, -0.8493459, 2.83435, -0.58065414)
-
 [node name="Cage2" parent="Environment NWiz" unique_id=1379996162 instance=ExtResource("11_et7jy")]
 transform = Transform3D(-0.16721615, 0, 0.98592025, 0, 1, 0, -0.98592025, 0, -0.16721615, -23.108742, 0.15266788, 15.151658)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Environment NWiz/Cage2" unique_id=574945051]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment NWiz/Cage2/StaticBody3D" unique_id=1672589262]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98095894, -0.67323923, -0.89985275)
-shape = SubResource("BoxShape3D_bgb4g")
-
-[node name="chain-holder-holder" parent="Environment NWiz/Cage2" unique_id=1796721028 instance=ExtResource("12_bgb4g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4175119, 4.339144, 1.5988941)
 
 [node name="LavaBucket" parent="Environment NWiz/Cage2" unique_id=15708733 instance=ExtResource("11_kct1s")]
 transform = Transform3D(-0.16721615, 0, -0.98592025, 0, 1, 0, 0.98592025, 0, -0.16721615, -0.87145185, 0.375, -0.61624527)
 
-[node name="chain-holder" parent="Environment NWiz/Cage2" unique_id=1844576313 instance=ExtResource("10_xlnu7")]
-transform = Transform3D(-0.16721615, 0, -0.98592025, 0, 1, 0, 0.98592025, 0, -0.16721615, 0.33235192, 4.3874493, -0.3970089)
-
-[node name="Chain" parent="Environment NWiz/Cage2" unique_id=396399891 instance=ExtResource("15_bgsoj")]
-transform = Transform3D(7.30925e-09, -0.16721615, -0.98592025, -1, -4.371139e-08, 0, -4.3095945e-08, 0.98592025, -0.16721615, -0.8493459, 2.83435, -0.58065414)
-
 [node name="Cage3" parent="Environment NWiz" unique_id=649729955 instance=ExtResource("11_et7jy")]
 transform = Transform3D(-0.16721615, 0, 0.98592025, 0, 1, 0, -0.98592025, 0, -0.16721615, -23.996525, 0.15266764, 10.685197)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Environment NWiz/Cage3" unique_id=1788780131]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment NWiz/Cage3/StaticBody3D" unique_id=419156227]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98095894, -0.67323923, -0.89985275)
-shape = SubResource("BoxShape3D_bgb4g")
-
-[node name="chain-holder-holder" parent="Environment NWiz/Cage3" unique_id=2032638281 instance=ExtResource("12_bgb4g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4175119, 4.339144, 1.5988941)
 
 [node name="LavaBucket" parent="Environment NWiz/Cage3" unique_id=1643779543 instance=ExtResource("11_kct1s")]
 transform = Transform3D(-0.16721615, 0, -0.98592025, 0, 1, 0, 0.98592025, 0, -0.16721615, -0.87145185, 0.375, -0.61624527)
 
-[node name="chain-holder" parent="Environment NWiz/Cage3" unique_id=1641140169 instance=ExtResource("10_xlnu7")]
-transform = Transform3D(-0.16721615, 0, -0.98592025, 0, 1, 0, 0.98592025, 0, -0.16721615, 0.33235192, 4.3874493, -0.3970089)
-
-[node name="Chain" parent="Environment NWiz/Cage3" unique_id=732132584 instance=ExtResource("15_bgsoj")]
-transform = Transform3D(7.30925e-09, -0.16721615, -0.98592025, -1, -4.371139e-08, 0, -4.3095945e-08, 0.98592025, -0.16721615, -0.8493459, 2.83435, -0.58065414)
-
 [node name="Cage4" parent="Environment NWiz" unique_id=516089600 instance=ExtResource("11_et7jy")]
 transform = Transform3D(-0.16721615, 0, 0.98592025, 0, 1, 0, -0.98592025, 0, -0.16721615, -24.523071, 0.15266812, 8.437651)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Environment NWiz/Cage4" unique_id=490677335]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment NWiz/Cage4/StaticBody3D" unique_id=113841676]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98095894, -0.67323923, -0.89985275)
-shape = SubResource("BoxShape3D_bgb4g")
-
-[node name="chain-holder-holder" parent="Environment NWiz/Cage4" unique_id=1370496592 instance=ExtResource("12_bgb4g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4175119, 4.339144, 1.5988941)
 
 [node name="LavaBucket" parent="Environment NWiz/Cage4" unique_id=2111675055 instance=ExtResource("11_kct1s")]
 transform = Transform3D(-0.16721615, 0, -0.98592025, 0, 1, 0, 0.98592025, 0, -0.16721615, -0.87145185, 0.375, -0.61624527)
 
-[node name="chain-holder" parent="Environment NWiz/Cage4" unique_id=1206230722 instance=ExtResource("10_xlnu7")]
-transform = Transform3D(-0.16721615, 0, -0.98592025, 0, 1, 0, 0.98592025, 0, -0.16721615, 0.33235192, 4.3874493, -0.3970089)
-
-[node name="Chain" parent="Environment NWiz/Cage4" unique_id=996068353 instance=ExtResource("15_bgsoj")]
-transform = Transform3D(7.30925e-09, -0.16721615, -0.98592025, -1, -4.371139e-08, 0, -4.3095945e-08, 0.98592025, -0.16721615, -0.8493459, 2.83435, -0.58065414)
-
 [node name="fence" parent="Environment NWiz" unique_id=1572298366 instance=ExtResource("12_mdsp7")]
 transform = Transform3D(-0.23768592, 0, -0.9713421, 0, 1, 0, 0.9713421, 0, -0.23768592, -25.56943, 0.02766642, 7.27459)
 
-[node name="fence4" parent="Environment NWiz" unique_id=1855577340 instance=ExtResource("12_mdsp7")]
-transform = Transform3D(-0.12907256, 0, -0.9916351, 0, 1, 0, 0.9916351, 0, -0.12907256, -24.690851, -0.007741481, 2.640729)
+[node name="fence4" parent="Environment NWiz/fence" unique_id=1855577340 instance=ExtResource("12_mdsp7")]
+transform = Transform3D(0.99389553, 0, 0.11032407, 0, 1, 0, -0.11032407, 0, 0.99389553, -4.7098894, -0.0354079, 0.2480011)
 
-[node name="fence5" parent="Environment NWiz" unique_id=1296367871 instance=ExtResource("12_mdsp7")]
-transform = Transform3D(-0.26244184, 0, -0.9649477, 0, 1, 0, 0.9649477, 0, -0.26244184, -24.500452, 0.02766642, 1.1088915)
+[node name="fence5" parent="Environment NWiz/fence" unique_id=1296367871 instance=ExtResource("12_mdsp7")]
+transform = Transform3D(0.9996729, 0, -0.025566325, 0, 1, 0, 0.025566325, 0, 0.9996729, -6.2430825, 0, 0.42715645)
 
-[node name="fence6" parent="Environment NWiz" unique_id=824979565 instance=ExtResource("12_mdsp7")]
-transform = Transform3D(0.0035429, 0, -0.99999356, 0, 1, 0, 0.99999356, 0, 0.0035429, -24.003216, 0.02766642, -0.54414845)
+[node name="fence6" parent="Environment NWiz/fence" unique_id=824979565 instance=ExtResource("12_mdsp7")]
+transform = Transform3D(0.9704936, 0, 0.24112572, 0, 1, 0, -0.24112572, 0, 0.9704936, -7.9669356, 0, 0.33707237)
 
-[node name="fence2" parent="Environment NWiz" unique_id=83295472 instance=ExtResource("12_mdsp7")]
-transform = Transform3D(0.09827763, 0, -0.99515903, 0, 1, 0, 0.99515903, 0, 0.09827763, -25.322628, 0.02766642, 8.771694)
+[node name="fence2" parent="Environment NWiz/fence" unique_id=83295472 instance=ExtResource("12_mdsp7")]
+transform = Transform3D(0.9432806, 0, 0.33199644, 0, 1, 0, -0.33199644, 0, 0.9432806, 1.3955388, 0, -0.5955696)
 
-[node name="fence3" parent="Environment NWiz" unique_id=2038878817 instance=ExtResource("12_mdsp7")]
-transform = Transform3D(0.09827763, 0, -0.99515903, 0, 1, 0, 0.99515903, 0, 0.09827763, -23.3227, 0.027666897, 19.049213)
+[node name="fence3" parent="Environment NWiz/fence" unique_id=2038878817 instance=ExtResource("12_mdsp7")]
+transform = Transform3D(0.9432806, 0, 0.33199644, 0, 1, 0, -0.33199644, 0, 0.9432806, 10.90317, 4.7683716e-07, -4.9810047)
 
-[node name="I-Beam" parent="." unique_id=249201878 instance=ExtResource("17_yl4ba")]
+[node name="Bridge" parent="." unique_id=249201878 instance=ExtResource("17_yl4ba")]
 transform = Transform3D(0.8355618, 0, 0.9790133, 0, 1, 0, -4.013955, 0, 0.20379554, -25.927313, -0.7591194, -4.2536955)
 
-[node name="I-Beam2" parent="I-Beam" unique_id=1795898043 instance=ExtResource("17_yl4ba")]
+[node name="I-Beam2" parent="Bridge" unique_id=1795898043 instance=ExtResource("17_yl4ba")]
 transform = Transform3D(0.24390244, 0, 2.2351742e-08, 0, 1, 0, -7.4505806e-08, 0, 0.9999999, 0.2589553, 0.7466872, 0.030864716)
 
-[node name="I-Beam3" parent="I-Beam" unique_id=618182256 instance=ExtResource("17_yl4ba")]
+[node name="I-Beam3" parent="Bridge" unique_id=618182256 instance=ExtResource("17_yl4ba")]
 transform = Transform3D(0.24390244, 0, 1.8626451e-08, 0, 1, 0, -7.4505806e-08, 0, 0.9999999, -0.2637347, 0.7466872, -0.003835678)
 
-[node name="BridgeJumpBlocker" type="StaticBody3D" parent="I-Beam" unique_id=1305000255]
+[node name="BridgeJumpBlocker" type="StaticBody3D" parent="Bridge" unique_id=1305000255]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.06814599, 0.24382758, 1.3422031)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="I-Beam/BridgeJumpBlocker" unique_id=1408435597]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bridge/BridgeJumpBlocker" unique_id=1408435597]
 transform = Transform3D(1, 0, -8.940697e-08, 0, 1, 0, 0, 0, 0.9999986, -0.0036221147, 1.5444336, 1.4964771)
 shape = SubResource("BoxShape3D_bgsoj")
 
@@ -274,17 +218,17 @@ transform = Transform3D(-0.72532636, 0, -0.68840516, 0, 1, 0, 0.68840516, 0, -0.
 [node name="pile of junk3" parent="pile of junk/pile of junk2" unique_id=1246510175 instance=ExtResource("18_bgsoj")]
 transform = Transform3D(-0.25783288, 0, 2.1856096, 0, 2.2007647, 0, -2.1856096, 0, -0.25783288, 0, 0, 4.7683716e-07)
 
-[node name="pile of junk2" parent="." unique_id=1451090865 instance=ExtResource("18_bgsoj")]
-transform = Transform3D(-1.6118603, 0, 2.0591578, 0, 2.615, 0, -2.0591578, 0, -1.6118603, -33.376617, 0.29053307, -12.493967)
+[node name="pile of junk3" parent="pile of junk" unique_id=1451090865 instance=ExtResource("18_bgsoj")]
+transform = Transform3D(-0.61639017, 0, 0.7874409, 0, 1, 0, -0.7874409, 0, -0.61639017, -0.7633257, -1.7881393e-07, -8.326402)
 
-[node name="pile of junk2" parent="pile of junk2" unique_id=1405321376 instance=ExtResource("18_bgsoj")]
+[node name="pile of junk2" parent="pile of junk/pile of junk3" unique_id=1405321376 instance=ExtResource("18_bgsoj")]
 transform = Transform3D(-0.72532636, 0, -0.68840516, 0, 1, 0, 0.68840516, 0, -0.72532636, 0.6809387, 0, 2.4418705)
 
-[node name="pile of junk3" parent="pile of junk2/pile of junk2" unique_id=356113358 instance=ExtResource("18_bgsoj")]
+[node name="pile of junk3" parent="pile of junk/pile of junk3/pile of junk2" unique_id=356113358 instance=ExtResource("18_bgsoj")]
 transform = Transform3D(-0.25783288, 0, 2.1856096, 0, 2.2007647, 0, -2.1856096, 0, -0.25783288, 0, 0, 4.7683716e-07)
 
-[node name="pile of junk4" parent="pile of junk2/pile of junk2" unique_id=1453317483 instance=ExtResource("18_bgsoj")]
+[node name="pile of junk4" parent="pile of junk/pile of junk3/pile of junk2" unique_id=1453317483 instance=ExtResource("18_bgsoj")]
 transform = Transform3D(-0.25783288, 0, 2.1856096, 0, 2.2007647, 0, -2.1856096, 0, -0.25783288, -4.4417324, -8.940697e-08, 3.1625907)
 
-[node name="pile of junk5" parent="pile of junk2/pile of junk2" unique_id=209162298 instance=ExtResource("18_bgsoj")]
+[node name="pile of junk5" parent="pile of junk/pile of junk3/pile of junk2" unique_id=209162298 instance=ExtResource("18_bgsoj")]
 transform = Transform3D(0.2002381, 0, -0.8386578, 0, 2.200765, 0, 2.6500952, 0, 0.06336804, -0.8892622, -0.2917975, 3.8967218)
