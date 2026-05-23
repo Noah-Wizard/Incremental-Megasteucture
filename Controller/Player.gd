@@ -150,11 +150,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 			_look = -event.relative * mouse_sensitivity
-	if event is InputEventJoypadMotion:
-		if event.axis == JOY_AXIS_RIGHT_X:
-			_look.x = event.axis_value * -0.1
-		if event.axis == JOY_AXIS_RIGHT_Y:
-			_look.y = event.axis_value * -0.1
+	
 	# Capture the mouse if it is uncaptured.
 	if event.is_action_pressed("click"):
 		if Input.get_mouse_mode() != Input.MOUSE_MODE_CAPTURED:

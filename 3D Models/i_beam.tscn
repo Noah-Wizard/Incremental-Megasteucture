@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b2kf8udngpfy4"]
+
+[ext_resource type="PackedScene" uid="uid://hrlfkryujpaw" path="res://3D Models/I-Beam.gltf" id="1_n2l5f"]
+[ext_resource type="Material" uid="uid://vfepbnpjqttv" path="res://Materials/floor_mat.tres" id="2_h7clm"]
+
+[node name="I-Beam" unique_id=249201878 instance=ExtResource("1_n2l5f")]
+
+[node name="I-Beam" parent="." index="0" unique_id=979323076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
+surface_material_override/0 = ExtResource("2_h7clm")

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://hrlfkryujpaw"
-path="res://.godot/imported/I-Beam.gltf-e4f6ccb31755aed430d26385bc2c40bb.scn"
+uid="uid://c0gih1qbcmwlg"
+path="res://.godot/imported/pile of junk.glb-7fa37b0477776794b56c3f404b7c4c54.scn"
 
 [deps]
 
-source_file="res://3D Models/I-Beam.gltf"
-dest_files=["res://.godot/imported/I-Beam.gltf-e4f6ccb31755aed430d26385bc2c40bb.scn"]
+source_file="res://3D Models/pile of junk.glb"
+dest_files=["res://.godot/imported/pile of junk.glb-7fa37b0477776794b56c3f404b7c4c54.scn"]
 
 [params]
 
@@ -39,7 +39,7 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "nodes": {
-"PATH:I-Beam": {
+"PATH:mergedBlocks(Clone)": {
 "generate/physics": true,
 "physics/shape_type": 1
 }

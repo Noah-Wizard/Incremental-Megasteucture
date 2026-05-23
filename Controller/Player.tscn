@@ -221,6 +221,7 @@ stream_0/stream = ExtResource("4_0mhnh")
 [node name="Player" type="CharacterBody3D" unique_id=1774909179 groups=["Player"]]
 floor_max_angle = 0.872665
 script = ExtResource("1_12if5")
+jump_height = 0.0
 
 [node name="BasePivot" type="Node3D" parent="." unique_id=1355147821]
 transform = Transform3D(0.99940294, -0.034170777, -0.0051850127, 0.034559883, 0.989665, 0.13917282, 0.00037578229, -0.13926883, 0.990255, 0, -1, 0)
@@ -230,6 +231,7 @@ libraries/ = SubResource("AnimationLibrary_56ijk")
 
 [node name="ProtoMesh" type="MeshInstance3D" parent="BasePivot" unique_id=1014259990]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+visible = false
 material_override = SubResource("StandardMaterial3D_mx3t8")
 mesh = SubResource("CapsuleMesh_leh0u")
 skeleton = NodePath("../..")
