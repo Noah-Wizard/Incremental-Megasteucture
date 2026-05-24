@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://bt7rrj47pprup" path="res://Scenes/incrementals_global_processing.gd" id="1_47b4s"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_47b4s"]
+font_size = 48
+
 [node name="IncrementalsGlobalProcessing" type="Node" unique_id=917572473 node_paths=PackedStringArray("currency_1_label")]
 script = ExtResource("1_47b4s")
 currency_1_label = NodePath("Gold")
@@ -9,4 +12,5 @@ currency_1_label = NodePath("Gold")
 [node name="Gold" type="Label" parent="." unique_id=590475048]
 offset_right = 40.0
 offset_bottom = 23.0
-text = "Gold: x"
+text = "0"
+label_settings = SubResource("LabelSettings_47b4s")

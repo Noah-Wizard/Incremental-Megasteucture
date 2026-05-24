@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bpkvxluyhi75p" path="res://3D Models/lava bucket.glb" id="2_dj04a"]
 [ext_resource type="Script" uid="uid://86npankyo2oe" path="res://3D Models/pick_up_processing.gd" id="3_no5dn"]
 [ext_resource type="PackedScene" uid="uid://bfend7vvxhiwr" path="res://3D Models/chain.tscn" id="7_4qtfs"]
+[ext_resource type="Script" uid="uid://drqbyrenflefx" path="res://3D Models/buy_me.gd" id="8_0sdus"]
 [ext_resource type="PackedScene" uid="uid://ni7l0mwm4om5" path="res://3D Models/chain-holder.glb" id="8_xja1o"]
 [ext_resource type="PackedScene" uid="uid://tchdtwvmkktb" path="res://3D Models/chain-holder-holder.glb" id="9_uf7f5"]
 
@@ -395,6 +396,9 @@ _data = {
 &"raise": SubResource("Animation_jx2yy")
 }
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_0sdus"]
+size = Vector3(1.3846436, 1, 1.456543)
+
 [node name="PickUp" type="Area3D" unique_id=15708733]
 script = ExtResource("1_13mif")
 
@@ -426,12 +430,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.1743913, 0)
 [node name="chain-holder" parent="." unique_id=660646503 instance=ExtResource("8_xja1o")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.0392828, 3.6495156, 1.2628529)
 
+[node name="chain-holder2" parent="." unique_id=1698593038 instance=ExtResource("8_xja1o")]
+transform = Transform3D(-1, 0, 8.0898346e-08, 0, 1, 0, -8.742278e-08, 0, -0.9253692, 0.0392828, 4.370044, 0.6593025)
+
 [node name="chain-holder-holder" parent="." unique_id=2056488974 instance=ExtResource("9_uf7f5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.3603206, 3.781714, -2.7765481)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=331396924]
 libraries/ = SubResource("AnimationLibrary_jx2yy")
-autoplay = &"get_lava"
+
+[node name="BuyMe" type="Area3D" parent="." unique_id=383111006]
+script = ExtResource("8_0sdus")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BuyMe" unique_id=872371190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08648682, 0, -0.043701172)
+shape = SubResource("BoxShape3D_0sdus")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="picked_up" from="." to="PickUpProcessing" method="_on_pick_up_picked_up"]
+[connection signal="body_entered" from="BuyMe" to="BuyMe" method="_on_body_entered"]
