@@ -40,7 +40,7 @@ materials/extract_path=""
 _subresources={
 "nodes": {
 "PATH:mergedBlocks(Clone)": {
-"generate/physics": true
+"physics/shape_type": 0
 }
 }
 }
